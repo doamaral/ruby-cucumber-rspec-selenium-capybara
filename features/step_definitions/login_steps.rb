@@ -1,13 +1,18 @@
-Given("entro com as informacoes") do
+Given("entro com as informacoes de login e senha validos") do
     visit "https://seubarriga.wcaquino.me/login"
-    sleep(5) 
+    fill_in 'email', with: 'silvia@yahoo.com.br'
+    fill_in 'senha', with: '1234'
+    click_button 'Entrar'
+    sleep 5
+end
+When("solicito acesso ao sistema") do
+    pending # Write code here that turns the phrase above into concrete actions
 end
   
-When("submeto o formulario") do
-    puts "passo 2" # Write code here that turns the phrase above into concrete actions
+Then("visualizo a pagina inicial") do
+    pending # Write code here that turns the phrase above into concrete actions
 end
   
-Then("mensagem de sucesso") do
-    puts "passo 3" # Write code here that turns the phrase above into concrete actions
+Then("mensagem de boas vindas") do
+    pending # Write code here that turns the phrase above into concrete actions
 end
-  
